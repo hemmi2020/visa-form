@@ -63,14 +63,14 @@ try {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'hamzashahzad020@gmail.com'; // SMTP username
-        $mail->Password   = 'cwka nlrg ssak wtow'; // SMTP password
+        $mail->Username   = ''; // SMTP username
+        $mail->Password   = ''; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
         $mail->Port       = 587; // TCP port to connect to
 
         // Sender and recipient
-        $mail->setFrom('hamzashahzad020@gmail.com', 'Your Name'); // Sender's email and name
-        $mail->addAddress('hamzashahzad020@gmail.com', 'Your Name'); // Recipient's email and name
+        $mail->setFrom('@gmail.com', 'Your Name'); // Sender's email and name
+        $mail->addAddress('@gmail.com', 'Your Name'); // Recipient's email and name
 
         // Content
         $mail->isHTML(true); // Set email format to HTML
